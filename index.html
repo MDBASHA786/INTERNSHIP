@@ -186,7 +186,7 @@
         { img: "ipl.jpg", name: "IPL Auction" },
         { img: "treasure.jpg", name: "Treasure Hunt" },
         { img: "cric.jpg", name: "Box Cricket" },
-        { img: "img.jpg", name: "" },
+        { img: "img.jpg", name: "img" },
       ];
 
       function Events(buttons) {
@@ -196,7 +196,7 @@
           const eventItem = document.createElement("div");
           eventItem.className = "event-item";
           eventItem.innerHTML = `
-                <a href="events/${event.name}.html">
+                <a href="${event.name}.html">
                     <img src="${event.img}" alt="${event.name}">
                     <p>${event.name}</p>
                     </a>
