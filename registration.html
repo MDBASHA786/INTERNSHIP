@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="registration.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Event Registration</h1>
+        <form  method="post" class="registration-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="event">Event:</label>
+            <select id="event" name="event" required>
+                <option value="Box Cricket">Box Cricket</option>
+                <option value="Treasure hunt">Treasure hunt</option>
+                <option value="IPL Auction">IPL Auction</option>
+                <option value="PUBG">PUBG</option>
+                <option value="Tech Quiz">Tech Quiz</option>
+                <option value="Debugging">Debugging</option>
+                <option value="Detective">Detective</option>
+                <option value="Hackathon">Hackathon</option>
+            </select>
+            
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    
+
+</body>
+</html>
